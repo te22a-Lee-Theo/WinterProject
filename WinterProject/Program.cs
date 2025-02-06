@@ -1,5 +1,5 @@
 ﻿
-Character one = new Player();
+Player one = new();
 
 string Answer;
 
@@ -23,9 +23,23 @@ Answer = Console.ReadLine().ToLower();
         System.Console.WriteLine("Well, whether you like it or not you don't have choise but to state your name");
         System.Console.WriteLine("(Enter a name)");
     }
+one.SetName();
 
-string dwdw = Player.GetName();
-System.Console.WriteLine(dwdw);
+System.Console.WriteLine($"I see. Your name is {one.GetName()}");
+System.Console.WriteLine("Now are you ready to start your journey, trying to escape from The Basement? (Press enter to start)");
+Console.Clear();
+
+one.Displaystats();
+
+Items sword = new()
+{
+    Name = "Sword",
+    Dmgchange = 10
+};
+
+one.Items.Add(sword);
+
+one.Display();
 
 
 Console.ReadLine();
