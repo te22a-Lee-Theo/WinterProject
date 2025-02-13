@@ -31,15 +31,20 @@ Console.Clear();
 
 one.Displaystats();
 
-Items sword = new()
+Item sword = new()
 {
     Name = "Sword",
     Dmgchange = 10
 };
 
-one.Items.Add(sword);
+one.Inventory.Items.Add(sword);
 
-one.Display();
+one.Inventory.Display();
 
+// System.Console.WriteLine($"{sword.Name}");
+
+
+// int oo = one.Setstatchange();
+// System.Console.WriteLine(oo);
 
 Console.ReadLine();

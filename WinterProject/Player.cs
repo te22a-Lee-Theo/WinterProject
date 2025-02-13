@@ -1,22 +1,36 @@
 public class Player: Character
 {
+    public Inventory Inventory;
     public Player()
     {
         Name = "";
         Health = 100;
 
+        Inventory = new();
+
+        Item Shield = new()
+        {
+            Name = "Shield",
+            Healthchange = 10
+        };
+
+        Inventory.Items.Add(Shield);
+
+
+
     }
-    public List<Items> Items = new();
 
     public void Displaystats()
     {
         System.Console.WriteLine($"Name: {Name} || Damage: {Mindmg} || Health: {Health} || Speed: {Speed}");
     }
 
-    public void Setstatchange()
-    {
-        
-    }
+    // public int Setstatchange()
+    // {
+        // int omo = Inventory.Getdmgchange();
+        // System.Console.WriteLine(omo);
+        // return omo;
+    // }
     
     public void Attack()
     {
@@ -25,21 +39,6 @@ public class Player: Character
     public void Parry()
     {
 
-    }
-    public void Display()
-    {
-        if (Items.Count == 0)
-        {
-            System.Console.WriteLine("Your inventory is empty");
-        }
-        else
-        {
-            System.Console.WriteLine("Your items:");
-            for (int i = 0; i < Items.Count; i++)
-            {
-                System.Console.WriteLine($"{i+1}. {Items[i].Name}");
-            }
-        }
     }
     public void SetName()
     {

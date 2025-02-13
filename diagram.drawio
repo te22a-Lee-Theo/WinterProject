@@ -38,7 +38,13 @@
                     <mxGeometry x="10" y="330" width="125" height="200" as="geometry"/>
                 </mxCell>
                 <mxCell id="23" value="Attack(): void&lt;br&gt;Specialattack(): void" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="10" vertex="1">
-                    <mxGeometry x="-5" y="50" width="130" height="40" as="geometry"/>
+                    <mxGeometry x="-5" y="100" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="endArrow=none;html=1;" edge="1" parent="10">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="70" as="sourcePoint"/>
+                        <mxPoint x="125" y="70" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="11" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="5" target="2" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
